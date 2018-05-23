@@ -4,7 +4,7 @@ import {UserStatService} from '../services/user-stat.service';
 import {TicketService} from '../services/ticket.service';
 import {HttpClientModule} from '@angular/common/http';
 import {UserService} from '../services/user.service';
-import {MessageService} from '../messages/message.service';
+import {MessageService} from '../messages/services/message.service';
 
 
 @NgModule({

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from '../services/user.service';
-import {UserInterface} from '../types/UserInterface';
-import {MessageService} from '../messages/message.service';
+import {UserService} from '../../services/user.service';
+import {UserInterface} from '../../types/UserInterface';
+import {MessageService} from '../../messages/services/message.service';
 
 @Component({
   selector: 'ticket-overview-user',

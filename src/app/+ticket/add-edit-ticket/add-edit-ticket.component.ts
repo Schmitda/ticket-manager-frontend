@@ -1,12 +1,12 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {UserStatService} from '../services/user-stat.service';
-import {BaseComponent} from '../base-component/base.component';
-import {TicketInterface} from '../types/TicketInterface';
-import {TicketService} from '../services/ticket.service';
+import {UserStatService} from '../../services/user-stat.service';
+import {BaseComponent} from '../../base-component/base.component';
+import {TicketInterface} from '../../types/TicketInterface';
+import {TicketService} from '../../services/ticket.service';
 import {FormGroup} from '@angular/forms';
 import {ActivatedRoute, Params, Router} from '@angular/router';
-import {UserInterface} from '../types/UserInterface';
-import {UserService} from '../services/user.service';
+import {UserInterface} from '../../types/UserInterface';
+import {UserService} from '../../services/user.service';
 
 @Component({
   selector: 'ticket-add-edit-ticket',

@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {UserInterface} from '../types/UserInterface';
-import {UserService} from '../services/user.service';
+import {UserService} from '../../services/user.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
-import {MessageService} from '../messages/message.service';
+import {MessageService} from '../../messages/services/message.service';
 
 @Component({
   selector: 'ticket-add-edit-user',

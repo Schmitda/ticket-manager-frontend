@@ -1,7 +1,8 @@
-import {Component, HostListener, NgZone, OnInit} from '@angular/core';
-import {TicketService} from '../services/ticket.service';
+import {Component, NgZone, OnInit} from '@angular/core';
+import {TicketInterface} from '../../types/TicketInterface';
+import {TicketService} from '../../services/ticket.service';
 import {ActivatedRoute, Router} from '@angular/router';
-import {TicketInterface} from '../types/TicketInterface';
+
 
 @Component({
   selector: 'ticket-view-ticket',
@@ -30,11 +31,6 @@ export class ViewTicketComponent implements OnInit {
         });
       }
     });
-    /*this.ticketService.newDataToShow.subscribe((val) => {
-      this.ngZone.run(() => {
-        this.ticket = val;
-      });
-    });*/
   }
 
   public close() {

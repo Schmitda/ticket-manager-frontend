@@ -1,8 +1,8 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import {TicketService} from '../services/ticket.service';
+import {TicketService} from '../../services/ticket.service';
 import 'rxjs/Rx';
-import {TicketInterface} from '../types/TicketInterface';
+import {TicketInterface} from '../../types/TicketInterface';
 
 // import 'rxjs/operator/debounceTime'
 

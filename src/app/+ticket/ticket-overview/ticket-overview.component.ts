@@ -1,6 +1,7 @@
 import {Component, NgZone, OnInit} from '@angular/core';
-import {TicketService} from '../services/ticket.service';
-import {TicketInterface} from '../types/TicketInterface';
+import {TicketInterface} from '../../types/TicketInterface';
+import {TicketService} from '../../services/ticket.service';
+
 
 @Component({
   selector: 'ticket-ticket-overview',

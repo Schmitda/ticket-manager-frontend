@@ -1,19 +1,21 @@
 import {RouterModule, Routes} from '@angular/router';
-import {TicketOverviewComponent} from './ticket-overview/ticket-overview.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {LoginComponent} from './login/login.component';
-import {AddEditTicketComponent} from './add-edit-ticket/add-edit-ticket.component';
-import {ViewTicketComponent} from './view-ticket/view-ticket.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
-import {AuthGuard} from './services/AuthGuard';
-import {AddEditUserComponent} from './add-edit-user/add-edit-user.component';
-import {ViewUserComponent} from './view-user/view-user.component';
-import {OverviewUserComponent} from './overview-user/overview-user.component';
+
 
 const Routes: Routes = [
   {
     path: 'home',
-    component: TicketOverviewComponent
+    component: DashboardComponent
+  },
+  {
+    path: 'user',
+    loadChildren: './+ticket/ticket/ticket.module#TicketModule'
+  },
+  {
+    path: 'ticket',
+    loadChildren: './+user/user/user.module#UserModule'
   },
   {
     path: 'dashboard',
@@ -22,36 +24,6 @@ const Routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
-  },
-  {
-    path: 'add',
-    component: AddEditTicketComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'edit/:id',
-    component: AddEditTicketComponent
-  },
-  {
-    path: 'user/add',
-    component: AddEditUserComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'user/edit/:id',
-    component: AddEditUserComponent
-  },
-  {
-    path: 'user/view/:id',
-    component: ViewUserComponent
-  },
-  {
-    path: 'user',
-    component: OverviewUserComponent
-  },
-  {
-    path: 'view/:id',
-    component: ViewTicketComponent
   },
   {
     path: '',

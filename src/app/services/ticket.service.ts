@@ -2,7 +2,7 @@ import {EventEmitter, Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {TicketInterface} from '../types/TicketInterface';
 import {Observable} from 'rxjs/Observable';
-import {ViewTicketComponent} from '../view-ticket/view-ticket.component';
+import {ViewTicketComponent} from '../+ticket/view-ticket/view-ticket.component';
 
 @Injectable()
 export class TicketService {
